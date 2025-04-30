@@ -16,11 +16,6 @@ GradScratch is an educational project that implements:
 2. Install dependencies
 3. Run examples
 
-## Dependencies
-
-- Python 3.x
-- NumPy
-- Matplotlib (for visualization)
 
 ## License
 
