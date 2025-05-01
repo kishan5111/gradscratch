@@ -1,6 +1,6 @@
 import random
 import numpy as np
-from micrograd.engine import Value
+from gradscratch.engine import Value
 
 class Module:
 

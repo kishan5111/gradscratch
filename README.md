@@ -1,6 +1,6 @@
 # GradScratch
 
-A hands-on implementation of neural networks and backpropagation from scratch. This project aims to provide a deep understanding of the fundamental concepts behind neural networks by building them from the ground up.
+A lightweight, educational implementation of neural networks and automatic differentiation from scratch. Built on top of Andrej Karpathy's micrograd, this project extends the core functionality with modern deep learning features like multiple activation functions, optimizers, and regularization techniques.
 
 ## Overview
 
@@ -33,6 +33,25 @@ GradScratch is an educational project that implements:
 ### Regularization
 - Dropout
 
+## Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/kishan5111/gradscratch
+cd gradscratch
+```
+
+2. Install the package in development mode:
+```bash
+pip install -e .
+```
+
+3. Run the tests:
+```bash
+python -m tests.test_engine
+python -m tests.test_nn
+```
+
 ## Usage
 
 ### Basic Neural Network
@@ -46,6 +65,7 @@ model = MLP(2, [16, 16, 1], dropout_p=0.1)  # 2 input features, 2 hidden layers 
 
 # Create an optimizer
 optimizer = Adam(model.parameters(), lr=0.001)
+
 # Training loop
 for epoch in range(100):
     # Forward pass
